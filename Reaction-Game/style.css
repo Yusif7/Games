@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.bg-color {
+    background-color: #87CEFA;
+}
+
+span {
+    display: block;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+button {
+    border-radius: 35px;
+    background-color: purple;
+    color: white;
+    font-size: 24px;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+}
+
+#game {
+    height: 549px;
+    width: 100vw;
+}
+
+#game-page {
+    display: none;
+}
+
+.start-page {
+    display: block;
+}
+
+.lose-page,
+.win-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+#lose-page {
+    display: none;
+}
+
+#win-page {
+    display: none;
+}
+
+.lose-button,
+.win-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.lose-score,
+.win-score {
+    display: inline-block;
+}
+
+.bounce {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}

@@ -10,7 +10,7 @@ const gameBoard = () => {
         addTarget()
         targetCount++;
         document.querySelector('h2').innerText = `Cixan hedeflerin sayi : ${targetCount}`;
-    }, 1000);
+    }, 700);
     checkShoot(targetShoot)
 }
 
@@ -27,7 +27,7 @@ const addTarget = () => {
     img.setAttribute('data-target', 'target');
     setInterval(() => {
         img.style.display = 'none';
-    }, 1000);
+    }, 700);
 }
 
 const checkShoot = (count) => {
