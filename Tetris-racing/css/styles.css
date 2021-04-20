@@ -1,0 +1,99 @@
+.bg-red {
+    background-color: red;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.d-flex {
+    display: flex
+}
+
+.d-none {
+    display: none
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.container {
+    width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+    height: 480px;
+    overflow: hidden;
+}
+
+.car {
+    width: 100px;
+    height: 100px;
+    background-image: url(../upCar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: absolute;
+    top: calc(100% - 100px);
+    left: 0;
+    transition: all 500ms linear;
+}
+
+.animate {
+    transition: all 500ms linear;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.car-comp {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url(../downcar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    top: 0;
+}
+
+.right-start {
+    left: 110px;
+}
+
+.crash {
+    width: 100vw;
+    height: 100vh;
+}
+
+.end {
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
