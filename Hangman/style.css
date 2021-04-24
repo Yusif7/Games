@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.person {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    bottom: 10%;
+    left: 21.5%;
+}
+
+.rock {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    bottom: 66%;
+    left: 10%;
+    animation: anime 3s infinite;
+    transition: bottom 0.8s ease 0s;
+    z-index: 2;
+}
+
+.column {
+    height: 440px;
+    object-fit: cover;
+    animation: columns 3s infinite;
+}
+
+.r {
+    position: absolute;
+    left: -2%;
+    bottom: 7%;
+}
+
+.l {
+    position: absolute;
+    left: 18%;
+    bottom: 7%;
+}
+
+.letters {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+
+.letters span {
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px;
+    border: 5px outset purple;
+    cursor: pointer;
+}
+
+.helpers {
+    position: absolute;
+    right: 25.5%;
+    top: 25%;
+}
+
+.helpers span {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+    padding: 10px;
+    border: 5px outset orangered;
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    position: absolute;
+    font-size: 45px;
+    top: 70%;
+    right: 30%;
+    width: 100px;
+    justify-content: space-between;
+}
+
+button {
+    border: 3px outset gray;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 25%;
+    top: 40%;
+}
+
+.find {
+    top: 50%;
+    padding: 10px 17px;
+}
+
+h1 {
+    position: absolute;
+    top: 55%;
+    right: 28%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    z-index: 5;
+    background-color: white;
+    display: none;
+}
+
+.overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.current-letter {
+    display: none !important;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateX(-35px);
+    }
+    50% {
+        transform: translateX(35px);
+    }
+    100% {
+        transform: translateX(-35px);
+    }
+}
+
+@keyframes columns {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
